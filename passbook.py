@@ -22,7 +22,7 @@ print("\nName\t\t\tAccount Number\n")
 for i in range(num):
     print("{}\t\t\t{}".format(names[i], account_numbers[i]))
 
-#Store the user input to enter the search term:
+#Store the user input to enter the search term if found print passbook found
 
 search_term = input("\nEnter search term: ")
 print("Search result:")
@@ -35,7 +35,7 @@ if search_term in names:
     account_number = account_numbers[index]
     print("Name: {}, Account Number: {}".format(search_term, account_number))
 
-# if search term not found print name not found
+# if search term not found print passbook  not found
 
 else:
     print("Pass book holder not found")
